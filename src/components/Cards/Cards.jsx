@@ -9,7 +9,7 @@ const Cards = (props) => {
         return (
           <Card
             onClose={element.onClose}
-            id={element.id}
+            key={element.id}
             name={element.name}
             status={element.status}
             species={element.species}

@@ -3,18 +3,19 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px lightgray solid;
+  border: .1rem lightgray solid;
   border-radius: 10px;
   margin: 10px;
   bottom: 5px;
   transition: transform 0.5s;
-  padding: 1rem;
+  padding: .5rem;
   max-width: 15%;
 }
 .containerCard:hover {
-  background-color: rgba(197, 197, 197, 0.2);
+  background-color: rgba(197, 197, 197, 0.3);
   transform: scale(1.05);
   cursor: pointer;
+  border: .12rem lightgray solid;
 }
 .button {
   cursor: pointer;
@@ -31,6 +32,7 @@
   font-size: large;
   font-family: sans-serif;
   color: aliceblue;
+  margin: 0.5rem 0 0.5rem 0;
 }
 .img {
   border-radius: 50%;
