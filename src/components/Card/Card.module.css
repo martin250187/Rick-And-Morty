@@ -1,3 +1,8 @@
+@font-face {
+  font-family: rick_and_morty_font;
+  src: url(../../assets/fonts/get_schwifty.ttf);
+}
+
 .containerCard {
   display: flex;
   flex-direction: column;
@@ -6,15 +11,15 @@
   border: .1rem lightgray solid;
   border-radius: 10px;
   margin: 10px;
-  bottom: 5px;
   transition: transform 0.5s;
   padding: .5rem;
   max-width: 15%;
+  min-width: 150px;
+  text-align: center;
 }
 .containerCard:hover {
   background-color: rgba(197, 197, 197, 0.3);
-  transform: scale(1.05);
-  cursor: pointer;
+  transform: scale(1.02);
   border: .12rem lightgray solid;
 }
 .button {
@@ -28,11 +33,8 @@
   border-radius: 50%;
 }
 .box {
-  display: flex;
-  font-size: large;
-  font-family: sans-serif;
   color: aliceblue;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0 0 0.5em 0;
 }
 .img {
   border-radius: 50%;

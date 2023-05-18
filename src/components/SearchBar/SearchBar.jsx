@@ -8,7 +8,7 @@ const SearchBar = (props) => {
   }
   return (
     <div className={styled.divContainer}>
-      <input className={styled.input} type="search" onChange={handleChange} />
+      <input className={styled.input} type="search" placeholder="Ingrese un ID" onChange={handleChange} />
       <button className={styled.searchBtn} onClick={()=>props.onSearch(id)}>
         Agregar
       </button>
