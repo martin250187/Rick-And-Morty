@@ -1,9 +1,13 @@
 .divContainer {
+  display: inline-block;
   margin: 0.5em;
   position: absolute;
+  justify-content: space-around;
   right: 0;
+  max-width: 70%;
 }
 .input {
+  width: 300px;
   padding: 5px;
   border-radius: 0.5em;
 }
@@ -13,7 +17,7 @@
 .searchBtn {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   padding: 5px;
-  width: 80px;
+  width: 100px;
   margin: 0 0 0 1em;
 }
 .searchBtn:hover {
