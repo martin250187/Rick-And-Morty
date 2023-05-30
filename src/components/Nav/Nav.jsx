@@ -1,15 +1,15 @@
 import SearchBar from "../SearchBar/SearchBar";
 import style from "./Nav.module.css";
-//import { NavLink } from "../NavLink/NavLink";
+import { NavLink } from "../NavLink/NavLink";
 import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   return (
     <nav className={style.navBar}>
       <div className={style.containerBtn}>
-        <Link to={"/home"}>
+        <NavLink to={"/home"}>
           <button className={style.navBtn}>Home</button>
-        </Link>
+        </NavLink>
         <Link to={"/about"}>
           <button className={style.navBtn}>About</button>
         </Link>
