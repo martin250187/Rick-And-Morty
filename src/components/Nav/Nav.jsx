@@ -13,6 +13,9 @@ const Nav = (props) => {
         <Link to={"/about"}>
           <button className={style.navBtn}>About</button>
         </Link>
+        <Link to={"/favorites"}>
+          <button className={style.navBtn}>Favorites</button>
+        </Link>
       </div>
       <SearchBar onSearch={props.onSearch} />
     </nav>
