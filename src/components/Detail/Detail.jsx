@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./Detail.module.css";
 import axios from "axios";
 
@@ -9,8 +8,11 @@ const Detail = () => {
   //Devuelve un objeto con las propiedades y el valor de los segmentos dinamicos de la URL
 
   const [character, setCharacter] = useState({});
-  //Variante del componentDidMount
+
+  //Variante del componentDidMount y componentDidUpdate (cuando cambia el array de dependencia)
+  //componentWillUnmount
   useEffect(() => {
+    console.log('Se Montó useEffect');
     axios(`https://rickandmortyapi.com/api/character/${id}`)
       .then(({ data }) => {
         if (data.name) {
@@ -24,7 +26,7 @@ const Detail = () => {
   alert('Algo Fallo!')
 });
     return setCharacter({});
-  }, [id]);
+  },[id]);
 
   return (
     <div className={style.container}>
