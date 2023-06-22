@@ -8,9 +8,11 @@ export const NavLink = ({ to, children, ...props })=> {
       <NavLinkComp
         {...props}
         to={to}
+        /*
         className={({ isActive }) => {
           isActive ? style.isActive : undefined;
         }}
+        */
         children={children}
       ></NavLinkComp>
     </>
